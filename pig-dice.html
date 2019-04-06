@@ -1,43 +1,53 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>pig-dice</title>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
-    <script src="js/scripts.js"></script>
-  </head>
-  <body>
 
-    <div class="container">
-    <div class="jumbotron">
-      <center>
-   <h1><em><u>THE PIG DICE</u></em></h1>
-      </center>
+<head>
+  <meta charset="utf-8">
+  <title>pig-dice</title>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <center>
+      <h1><em><u>THE PIG DICE</u></em></h1>
+    </center>
 
     <input type="text" name="CONTENDER 1:" placeholder="CONTENDER 1:" id="contenderone">
-    <input type="text" name="CONTENDER 2:" placeholder="CONTENDER 2:" id="contendertwo">
+    <input type="text" name="CONTENDER 2:" placeholder="CONTENDER 2:" id="contendertwo"><br>
+   
     <input type="button" value="BEGIN">
+  
 
-    
-
-
-
-
-
-
-
-
-
-
-
-
+    <div class="row">
+      <div class="col-md-4">
+        <div class="well">
+          <h3>PLAYER ONE</h3>
+          <h4>ROLL</h4>
+          <h5>total score:</h5>
+          <input type="button" value="ROLL">
+          <input type="button" value="HOLD">
+        </div>
+      </div>
 
 
+        <div class="col-md-4">
+          <div class="well">
+            <h3>PLAYER TWO</h3>
+            <h4>ROLL</h4>
+            <h5>total score:</h5>
+            <input type="button" value="ROLL">
+            <input type="button" value="HOLD">
+          </div>
+        </div>
 
-
+      </div>
     </div>
-    </div>
-  </body>
+</body>
+
 </html>
