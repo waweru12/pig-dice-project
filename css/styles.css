@@ -1,6 +1,6 @@
 .well{
     background-color:rgb(53, 189, 83);
-    background-image: url(/home/austin/pig-dice/images/200w.webp)
+    background-image: url(/home/austin/pig-dice/images/rolling-dice-gif-10.gif)
 }
 body{
     background-image: url("/home/austin/pig-dice/images/rolling-dice-gif-7.gif")
@@ -17,5 +17,8 @@ button{
     
 }
 .jk {
-    color:rgb(14, 206, 14);
+    color:black;
+}
+.kj{
+    color: black;
 }
