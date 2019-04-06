@@ -1,11 +1,11 @@
 .well{
-    background-color:rgb(221, 117, 117);
+    background-color:rgb(53, 189, 83);
 }
 body{
     background-image: url("/home/austin/pig-dice/images/rolling-dice-gif-7.gif")
 }
 h1 {
-    color: rgba(255, 255, 0, 0.705);
+    color: rgba(60, 255, 0, 0.705);
 }
 button{
     color: rgb(0, 255, 13);
@@ -13,5 +13,4 @@ button{
     float:right;
     height: 60px;
     width: 50px;
-
 }
