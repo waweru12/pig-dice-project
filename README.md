@@ -24,4 +24,4 @@ A web application that generates a number randomly and returns it with specific 
 
 # Setup and Installation
 
-Make sure you have git installed. On the terminal, navigate to your workspace directory and run   
+Make sure you have git installed. On the terminal, navigate to your workspace directory and run.   
