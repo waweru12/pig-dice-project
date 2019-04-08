@@ -11,3 +11,44 @@ $("input:text").ready(function () {
 
     });
 });
+
+
+var round1Total = 0
+var round2Total = 0
+var totalScore1 = 0
+var totalScore2 = 0
+var hold1 = 0
+var hold2 = 0
+
+
+$(document).ready(function () {
+  $("#roll1").click(() => {
+    var random1 = Math.floor((Math.random() * 6) + 1);
+    $("#outputOne").text("DICE ROLL: " + random1);
+
+    if (random1 === 1) {
+      round1Total = 0;
+      $("#roundOne").text("ROUND TOTAL: " + round1Total);
+    } else {
+      round1Total = random1 + round1Total;
+      $("#roundOne").text("ROUND TOTAL: " + round1Total);
+    }
+  });
+});
+
+
+$(document).ready(function () {
+  $("#roll2").click(() => {
+    var random2 = Math.floor((Math.random() * 6) + 1);
+    $("#outputTwo").text("DICE ROLL: " + random2);
+
+    if (random2 === 1) {
+      round2Total = 0;
+      $("#roundTwo").text("ROUND TOTAL: " + round2Total);
+    } else {
+      round2Total = random2 + round2Total;
+      $("#roundTwo").text("ROUND TOTAL: " + round2Total);
+    }
+  });
+});
+
