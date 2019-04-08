@@ -1,9 +1,9 @@
 .well{
     background-color:rgb(53, 189, 83);
-    background-image: url(/home/austin/pig-dice/images/rolling-dice-gif-10.gif)
+    background-image: url("../images/rolling-dice-gif-10.gif")
 }
 body{
-    background-image: url("/home/austin/pig-dice/images/rolling-dice-gif-7.gif")
+    background-image: url("../images/rolling-dice-gif-7.gif")
 }
 
 .jk {
@@ -13,7 +13,7 @@ body{
     color: black;
 }
 .jumbotron {
-    background-image: url("/home/austin/pig-dice/images/original.jpg")
+    background-image: url("../images/original.jpg")
 }
 #lol {
   color:rgba(128, 128, 128, 0.849); 
