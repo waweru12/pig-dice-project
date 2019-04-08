@@ -49,6 +49,7 @@ $(document).ready(function () {
     });
   });
   
+  
 $(document).ready(function () {
   $("#roll2").click(() => {
     var random2 = Math.floor((Math.random() * 6) + 1);
