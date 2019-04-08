@@ -13,42 +13,57 @@ $("input:text").ready(function () {
 });
 
 
-var round1Total = 0
-var round2Total = 0
-var totalScore1 = 0
-var totalScore2 = 0
-var hold1 = 0
-var hold2 = 0
+var bit1all = 0
+var bit2all= 0
+var Score1 = 0
+var Score2 = 0
+var outhold = 0
+var inhold = 0
 
 
 $(document).ready(function () {
   $("#roll1").click(() => {
     var random1 = Math.floor((Math.random() * 6) + 1);
-    $("#outputOne").text("DICE ROLL: " + random1);
+    $("#span1").text("DICE ROLL: " + random1);
 
     if (random1 === 1) {
-      round1Total = 0;
-      $("#roundOne").text("ROUND TOTAL: " + round1Total);
+      bit1all = 0;
+      $("#bitOne").text("ROUND TOTAL: " + bit1all);
     } else {
-      round1Total = random1 + round1Total;
-      $("#roundOne").text("ROUND TOTAL: " + round1Total);
+      bit1all = random1 + bit1all;
+      $("#bitOne").text("ROUND TOTAL: " + bit1all);
     }
   });
 });
 
-
+$(document).ready(function () {
+    $("#1hold").click(() => {
+      hold1 = bit1all + Score1 + ouhold;
+      bit1all = 0;
+      $("#bitOne").text("Total score: " + outhold);
+    });
+  });
+  
 $(document).ready(function () {
   $("#roll2").click(() => {
     var random2 = Math.floor((Math.random() * 6) + 1);
-    $("#outputTwo").text("DICE ROLL: " + random2);
+    $("#span2").text("DICE ROLL: " + random2);
 
     if (random2 === 1) {
-      round2Total = 0;
-      $("#roundTwo").text("ROUND TOTAL: " + round2Total);
+      bit2all = 0;
+      $("#bitTwo").text("ROUND TOTAL: " + bit2all);
     } else {
-      round2Total = random2 + round2Total;
-      $("#roundTwo").text("ROUND TOTAL: " + round2Total);
+      bit2all = random2 + bit2all;
+      $("#bitTwo").text("ROUND TOTAL: " + bit2all);
     }
   });
 });
 
+$(document).ready(function () {
+    $("#2hold").click(() => {
+      hold2 = bit2all + Score2 + inhold;
+      bit2all = 0;
+      $("#bitTwo").text("Total score: " + inhold);
+    });
+  });
+  
