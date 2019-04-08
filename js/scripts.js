@@ -12,13 +12,14 @@ $("input:text").ready(function () {
     });
 });
 
-
 var bit1all = 0
 var bit2all= 0
 var Score1 = 0
 var Score2 = 0
 var outhold = 0
 var inhold = 0
+
+
 
 
 $(document).ready(function () {
@@ -36,9 +37,10 @@ $(document).ready(function () {
   });
 });
 
+
 $(document).ready(function () {
     $("#1hold").click(() => {
-      hold1 = bit1all + Score1 + ouhold;
+      outhold = bit1all + Score1 + outhold;
       bit1all = 0;
       $("#bitOne").text("Total score: " + outhold);
     });
@@ -61,7 +63,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     $("#2hold").click(() => {
-      hold2 = bit2all + Score2 + inhold;
+      inhold = bit2all + Score2 + inhold;
       bit2all = 0;
       $("#bitTwo").text("Total score: " + inhold);
     });
