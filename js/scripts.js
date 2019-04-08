@@ -1,6 +1,9 @@
 function myFunction (){
     alert("Each turn the player gets a chance to roll the dice. If the player gets 1 on any of the dice he earns nothing and another player gets his turn. On getting 2-6 on the dice, player's sum is being added to his round score, until he decides to stash his current score. If the player stashed his score, the other player get points wins the game.If a player gets 6 on any dice twice in a row, the player loses all the points from his current and overall scores. ");
 }
+function myFunc() {
+    location.reload();
+}
 $("input:text").ready(function () {
     $("#BEGIN").click(() => {
         var firstName = $("input:text#contenderOne").val();
@@ -29,10 +32,10 @@ $(document).ready(function () {
 
     if (random1 === 1) {
       bit1all = 0;
-      $("#bitOne").text("ROUND TOTAL: " + bit1all);
+      $("#bitOne").text(" TOTAL: " + bit1all);
     } else {
       bit1all = random1 + bit1all;
-      $("#bitOne").text("ROUND TOTAL: " + bit1all);
+      $("#bitOne").text(" TOTAL: " + bit1all);
     }
   });
 });
@@ -53,10 +56,10 @@ $(document).ready(function () {
 
     if (random2 === 1) {
       bit2all = 0;
-      $("#bitTwo").text("ROUND TOTAL: " + bit2all);
+      $("#bitTwo").text(" TOTAL: " + bit2all);
     } else {
       bit2all = random2 + bit2all;
-      $("#bitTwo").text("ROUND TOTAL: " + bit2all);
+      $("#bitTwo").text(" TOTAL: " + bit2all);
     }
   });
 });
@@ -69,3 +72,4 @@ $(document).ready(function () {
     });
   });
   
+    
